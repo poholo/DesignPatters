@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		04A9BC5A1A5BE4DB00663BB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC591A5BE4DB00663BB0 /* main.m */; };
+		04A9BC6C1A5BF6F500663BB0 /* IWomen.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC6A1A5BF6F500663BB0 /* IWomen.m */; };
+		04A9BC6F1A5BF70900663BB0 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC6E1A5BF70900663BB0 /* Father.m */; };
+		04A9BC721A5BF71B00663BB0 /* Husband.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC711A5BF71B00663BB0 /* Husband.m */; };
+		04A9BC751A5BF72300663BB0 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC741A5BF72300663BB0 /* Son.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		04A9BC561A5BE4DB00663BB0 /* ChainOfResponsibility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChainOfResponsibility; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9BC591A5BE4DB00663BB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04A9BC631A5BF60200663BB0 /* IHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHandler.h; sourceTree = "<group>"; };
+		04A9BC691A5BF6F500663BB0 /* IWomen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWomen.h; sourceTree = "<group>"; };
+		04A9BC6A1A5BF6F500663BB0 /* IWomen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWomen.m; sourceTree = "<group>"; };
+		04A9BC6D1A5BF70900663BB0 /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		04A9BC6E1A5BF70900663BB0 /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		04A9BC701A5BF71B00663BB0 /* Husband.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Husband.h; sourceTree = "<group>"; };
+		04A9BC711A5BF71B00663BB0 /* Husband.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Husband.m; sourceTree = "<group>"; };
+		04A9BC731A5BF72300663BB0 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		04A9BC741A5BF72300663BB0 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +54,9 @@
 		04A9BC4D1A5BE4DB00663BB0 = {
 			isa = PBXGroup;
 			children = (
+				04A9BC681A5BF6F500663BB0 /* com.mjc.client */,
+				04A9BC6B1A5BF6F500663BB0 /* com.mjc.respose */,
+				04A9BC611A5BF5D500663BB0 /* com.mjc.interface */,
 				04A9BC581A5BE4DB00663BB0 /* ChainOfResponsibility */,
 				04A9BC571A5BE4DB00663BB0 /* Products */,
 			);
@@ -60,6 +76,36 @@
 				04A9BC591A5BE4DB00663BB0 /* main.m */,
 			);
 			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
+		04A9BC611A5BF5D500663BB0 /* com.mjc.interface */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BC631A5BF60200663BB0 /* IHandler.h */,
+			);
+			path = com.mjc.interface;
+			sourceTree = "<group>";
+		};
+		04A9BC681A5BF6F500663BB0 /* com.mjc.client */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BC691A5BF6F500663BB0 /* IWomen.h */,
+				04A9BC6A1A5BF6F500663BB0 /* IWomen.m */,
+			);
+			path = com.mjc.client;
+			sourceTree = "<group>";
+		};
+		04A9BC6B1A5BF6F500663BB0 /* com.mjc.respose */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BC6D1A5BF70900663BB0 /* Father.h */,
+				04A9BC6E1A5BF70900663BB0 /* Father.m */,
+				04A9BC701A5BF71B00663BB0 /* Husband.h */,
+				04A9BC711A5BF71B00663BB0 /* Husband.m */,
+				04A9BC731A5BF72300663BB0 /* Son.h */,
+				04A9BC741A5BF72300663BB0 /* Son.m */,
+			);
+			path = com.mjc.respose;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A9BC6C1A5BF6F500663BB0 /* IWomen.m in Sources */,
+				04A9BC751A5BF72300663BB0 /* Son.m in Sources */,
+				04A9BC721A5BF71B00663BB0 /* Husband.m in Sources */,
+				04A9BC6F1A5BF70900663BB0 /* Father.m in Sources */,
 				04A9BC5A1A5BE4DB00663BB0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +282,7 @@
 				04A9BC5F1A5BE4DB00663BB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
