@@ -1,17 +1,15 @@
 //
-//  IWomen.h
+//  Women.h
 //  ChainOfResponsibility
 //
-//  Created by mac on 15/1/6.
+//  Created by mac on 15/1/7.
 //  Copyright (c) 2015年 mjc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "IWomen.h"
 
-@interface IWomen : NSObject{
-    int _type;
-    NSString *_request;
-}
+@interface Women : IWomen
+
 -(instancetype)initWithType:(int)type request:(NSString*)request;
 -(int)getType;
 -(NSString*)getRequest;

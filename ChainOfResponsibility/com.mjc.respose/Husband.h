@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "IHandler.h"
-@interface Husband : NSObject<IHandler>
+#import "IWomen.h"
+@interface Husband : IHandler
 -(void)handleMessage:(IWomen *)iwomen;
 @end

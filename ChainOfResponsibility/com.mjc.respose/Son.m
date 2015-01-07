@@ -7,7 +7,10 @@
 //
 
 #import "Son.h"
-
+#import "IWomen.h"
 @implementation Son
-
+-(void)handleMessage:(IWomen *)iwomen{
+    NSLog(@"👩母亲的请求是:%@",[iwomen getRequest]);
+    NSLog(@"儿子回答:同意");
+}
 @end

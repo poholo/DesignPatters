@@ -5,16 +5,8 @@
 //  Created by mac on 15/1/6.
 //  Copyright (c) 2015年 mjc. All rights reserved.
 //
-
-#ifndef __ChainOfResponsibility__IHandler__
-#define __ChainOfResponsibility__IHandler__
+#import <Foundation/Foundation.h>
 @class IWomen;
-@class NSObject;
-@protocol IHandler <NSObject>
-
--(void)handleMessage:(IWomen*)iwomen;
+@interface IHandler : NSObject
+-(void)handleMessage:(IWomen *)iwomen;
 @end
-
-
-
-#endif /* defined(__ChainOfResponsibility__IHandler__) */

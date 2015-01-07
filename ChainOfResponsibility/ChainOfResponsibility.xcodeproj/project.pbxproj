@@ -12,6 +12,8 @@
 		04A9BC6F1A5BF70900663BB0 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC6E1A5BF70900663BB0 /* Father.m */; };
 		04A9BC721A5BF71B00663BB0 /* Husband.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC711A5BF71B00663BB0 /* Husband.m */; };
 		04A9BC751A5BF72300663BB0 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC741A5BF72300663BB0 /* Son.m */; };
+		04A9BC8A1A5D03A800663BB0 /* Women.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC891A5D03A800663BB0 /* Women.m */; };
+		04A9BC8C1A5D08DC00663BB0 /* IHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BC8B1A5D08DC00663BB0 /* IHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,9 @@
 		04A9BC711A5BF71B00663BB0 /* Husband.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Husband.m; sourceTree = "<group>"; };
 		04A9BC731A5BF72300663BB0 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		04A9BC741A5BF72300663BB0 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		04A9BC881A5D03A800663BB0 /* Women.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Women.h; sourceTree = "<group>"; };
+		04A9BC891A5D03A800663BB0 /* Women.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Women.m; sourceTree = "<group>"; };
+		04A9BC8B1A5D08DC00663BB0 /* IHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				04A9BC631A5BF60200663BB0 /* IHandler.h */,
+				04A9BC8B1A5D08DC00663BB0 /* IHandler.m */,
 			);
 			path = com.mjc.interface;
 			sourceTree = "<group>";
@@ -91,6 +97,8 @@
 			children = (
 				04A9BC691A5BF6F500663BB0 /* IWomen.h */,
 				04A9BC6A1A5BF6F500663BB0 /* IWomen.m */,
+				04A9BC881A5D03A800663BB0 /* Women.h */,
+				04A9BC891A5D03A800663BB0 /* Women.m */,
 			);
 			path = com.mjc.client;
 			sourceTree = "<group>";
@@ -164,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A9BC8A1A5D03A800663BB0 /* Women.m in Sources */,
 				04A9BC6C1A5BF6F500663BB0 /* IWomen.m in Sources */,
 				04A9BC751A5BF72300663BB0 /* Son.m in Sources */,
+				04A9BC8C1A5D08DC00663BB0 /* IHandler.m in Sources */,
 				04A9BC721A5BF71B00663BB0 /* Husband.m in Sources */,
 				04A9BC6F1A5BF70900663BB0 /* Father.m in Sources */,
 				04A9BC5A1A5BE4DB00663BB0 /* main.m in Sources */,
