@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "IHandler.h"
 @interface Son : IHandler
--(void)handleMessage:(IWomen *)iwomen;
+-(instancetype)init;
+-(void)response:(IWomen *)iwomen;
 @end

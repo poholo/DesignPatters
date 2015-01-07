@@ -10,5 +10,6 @@
 #import "IHandler.h"
 #import "IWomen.h"
 @interface Husband : IHandler
--(void)handleMessage:(IWomen *)iwomen;
+-(instancetype)init;
+-(void)response:(IWomen *)iwomen;
 @end

@@ -29,30 +29,11 @@ int main(int argc, const char * argv[]) {
         IHandler *husband = [[Husband alloc] init];
         IHandler *son     = [[Son alloc] init];
         
-        
-        for(Women *women in womenArr){
-            switch ([women getType]) {
-                case 0:
-                {
-                    //未出嫁女子
-                    [father handleMessage:women];
-                }
-                    break;
-                case 1:{
-                    //出嫁女子，丈夫健在
-                    [husband handleMessage:women];
-                }
-                    break;
-                case 2:{
-                    //出嫁女子，有儿女，丈夫早逝
-                    [son handleMessage:women];
-                }
-                    break;
-                default:{
-                    NSLog(@"超出宇宙范围");
-                }
-                    break;
-            }
+        //设置请求链
+        [father setNextHandler:husband];
+        [husband setNextHandler:son];
+        for(IWomen *women in womenArr){
+            [father handleMessage:women];
         }
         
     }

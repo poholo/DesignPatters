@@ -9,7 +9,13 @@
 #import "Father.h"
 
 @implementation Father
--(void)handleMessage:(IWomen *)iwomen{
+-(instancetype)init{
+    if (self = [super initLevel:FATHER_LEVEL]) {
+        
+    }
+    return self;
+}
+-(void)response:(IWomen *)iwomen{
     NSLog(@"👧的请求是%@",[iwomen getRequest]);
     NSLog(@"👨回答：同意");
     
